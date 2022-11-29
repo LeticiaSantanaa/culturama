@@ -1,0 +1,39 @@
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 33px;
+}
+
+@media screen and (min-width: 720px) {
+
+    .menu{
+        column-gap: 75px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .menu{
+        column-gap: 105px;
+        flex-wrap: nowrap;
+
+    }
+    .menu__item:nth-child(1){ /*to informando que quero aplicar estilos na 1° elemento que tiver a classe menu__item (LOGO)*/
+        order: 1;
+    }
+    .menu__item:nth-child(2){ /*to informando que quero aplicar estilos na 2° elemento que tiver a classe menu__item (PROGRAMAÇAO)*/
+        order: 3; /*vai ser o terceiro elemento do cabecalho*/
+    }
+    .menu__item:nth-child(3){ /*to informando que quero aplicar estilos na 3° elemento que tiver a classe menu__item */
+        order: 4;
+    }
+    .menu__item:nth-child(4){ /*to informando que quero aplicar estilos na 4° elemento que tiver a classe menu__item*/
+        order: 5;
+    }
+    .menu__item:nth-child(5){ /*to informando que quero aplicar estilos na 5° elemento que tiver a classe menu__item (PESQUISA)*/
+        order: 2; /*vai ser o segundo item da lista*/
+    }
+
+}
