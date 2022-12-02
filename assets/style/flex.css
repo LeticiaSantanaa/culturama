@@ -13,6 +13,15 @@
     row-gap: .5rem;  /*espaço entre linhas*/
 }
 
+.destaques{
+    display: flex;
+    align-items: center;
+    gap: 10px; /*espaçamento de linha e coluna*/
+}
+
+.destaques__barra{ 
+    flex-grow: 1; /*é utilizada para expandir elementos de acordo com o espaço disponível em um flex-container*/
+}
 @media screen and (min-width: 720px) {
 /*CABECALHO*/
     .menu{
