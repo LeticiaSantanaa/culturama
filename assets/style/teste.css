@@ -1,3 +1,13 @@
+body{
+    background-color: rgb(4, 8, 46);
+}
+main{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
 .Teste{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -7,17 +17,29 @@
     "numero1 numero1 "
     "numero2 numero2  "
     "numero2 numero2  "
-    "numero3 numero3  ";
-    width: 500px;
+    "numero2 numero2  "
+    "numero8 numero8  ";
     background-color: rgb(122, 221, 188);
     padding: 2rem;
+    flex-grow: 1;
 }
 
 .teste1{
     background-color: rgb(45, 106, 163);
     grid-area: numero1;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+
 }
 .teste2{
     background-color: rgb(14, 160, 111);
+    display: flex;
+    justify-content: center;
+}
+.n8{
+    grid-area: numero8;
+    background-color: rgb(45, 106, 163);
+
 }
 
